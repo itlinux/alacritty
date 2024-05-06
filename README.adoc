@@ -1,1 +1,5 @@
 == My Alacritty config
+
+The theme repo
+
+ https://github.com/alacritty/alacritty-theme
