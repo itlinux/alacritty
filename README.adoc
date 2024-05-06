@@ -5,11 +5,11 @@ The theme repo
  https://github.com/alacritty/alacritty-theme
 
 
- === My zshrc part
+=== My zshrc part
  This is only for the fzf and fd, eza, and a few other tools I installed with Alacritty. 
 
- .zshrc
- ----
+.zshrc
+ 
     source ~/.oh-my-zsh/fzf-git.sh
     eval "$(fzf --zsh)"
     export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always --line-range :500 {}'"
@@ -55,4 +55,4 @@ The theme repo
     eval "$(zoxide init zsh)"
     alias cd="z"
     eval "$(atuin init zsh)"
-----
+
