@@ -1,0 +1,103 @@
+import = [
+#"~/.config/alacritty/themes/themes/coolnight.toml"
+    "~/.config/alacritty/themes/themes/monokai.toml"
+]
+
+live_config_reload = true
+
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+padding.x = 0
+padding.y = 10
+dynamic_title = false
+dimensions.columns = 130
+dimensions.lines = 33
+
+decorations = "Buttonless"
+
+opacity = 0.8
+blur = true
+
+option_as_alt = "OnlyLeft"
+#draw_bold_text_with_bright_colors = true
+
+[font]
+normal = { family = "MesloLGMDZ Nerd Font Mono", style = "Regular" }
+#normal = { family = "DejaVu Sans", style = "Book" }
+#normal.family = "MesloLGS Nerd Font Mono"
+
+  # The normal (roman) font face to use.
+  # Style can be specified to pick a specific face.
+#normal.family =  "Iosevka"
+#normal.style =  "Light"
+    # family: "Fira Code"
+    # family: "Source Code Pro"
+    # style: Retina
+
+# The bold font face
+#bold.family = "Iosevka"
+#style = "Medium"
+# family: "Fira Code"
+# family: "Source Code Pro"
+
+# The italic font face
+#italic.family = "Iosevka"
+#style = "Light Italic"
+# style: "Light Oblique"
+# family: "Fira Code"
+# family: "Source Code Pro"
+# style: "Medium Italic"
+
+size = 12.5
+
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>"
+
+[mouse]
+# When true, the cursor is temporarily hidden when typing
+hide_when_typing = true  # Default: false
+
+# Mouse bindings (actual bindings need to be defined as per user preference)
+# Example: bindings = [{ mouse = "Left", action = "Paste" }]
+bindings = []
+
+
+[cursor]
+  style.shape = "Beam"
+  unfocused_hollow = true
+
+[keyboard]
+bindings = [
+  { key = "N",     mods = "Control|Shift", action = "CreateNewWindow" },
+  { key = "Right", mods = "Alt", chars = "\u001BF" },
+  { key = "Left",  mods = "Alt", chars = "\u001BB" },
+]
+
+#bindings = [
+#{ key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
+#{ key = "L", mods = "Control|Shift", chars = "l" },
+#]
+
+# Define keyboard bindings here
+# Example placeholder (actual bindings need to be defined based on user preference)
+#bindings = [
+#    # { key = "Key", mods = "Modifiers", action = "Action" },
+#    # { key = "Key", mods = "Modifiers", chars = "Characters to send" },
+#    # ...
+#]
+
+[scrolling]
+
+# Maximum number of lines in the scrollback buffer
+history = 20000  # Default: 10000
+
+# Number of lines scrolled for every input scroll increment
+multiplier = 3  # Default: 3
+
+[terminal]
+# Controls the OSC 52 behavior for clipboard interactions
+osc52 = "CopyPaste"  # Default: "OnlyCopy"
